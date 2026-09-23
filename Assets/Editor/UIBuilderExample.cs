@@ -2,16 +2,16 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class UIBuderExample : EditorWindow
+public class UIBuilderExample : EditorWindow
 {
     [SerializeField]
     private VisualTreeAsset m_VisualTreeAsset = default;
 
-    [MenuItem("Window/UI Toolkit/UIBuderExample")]
+    [MenuItem("Window/UI Toolkit/UIBuilderExample")]
     public static void ShowExample()
     {
-        UIBuderExample wnd = GetWindow<UIBuderExample>();
-        wnd.titleContent = new GUIContent("UIBuderExample");
+        UIBuilderExample wnd = GetWindow<UIBuilderExample>();
+        wnd.titleContent = new GUIContent("UIBuilderExample");
     }
 
     public void CreateGUI()
