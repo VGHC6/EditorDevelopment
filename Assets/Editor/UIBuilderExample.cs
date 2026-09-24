@@ -23,6 +23,10 @@ public class UIBuilderExample : EditorWindow
         VisualElement label = new Label("Hello World! From C#");
         root.Add(label);
 
+        Button button = new Button();
+        button.text = "Click me!";
+        root.Add(button);
+
         // Instantiate UXML
         VisualElement labelFromUXML = m_VisualTreeAsset.Instantiate();
         root.Add(labelFromUXML);
